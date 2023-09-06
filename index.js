@@ -5,7 +5,19 @@ console.log(`
   Ada version: ${process.versions.ada ?? 'unavailable'}
 `)
 
-f.post('/', async (request) => {
+f.post('/simple', async (request) => {
+    const { url } = request.body
+
+    if (!url) {
+        throw new Error('missing url')
+    }
+
+    return {
+        parsed: url 
+    }
+})
+
+f.post('/href', async (request) => {
     const { url } = request.body
 
     if (!url) {

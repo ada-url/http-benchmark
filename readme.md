@@ -20,9 +20,14 @@ npm start
     npm i autocannon -g
     ```
 
-  - Start the benchmark:
+  - Start the benchmark (URL parsing):
 
     ```shell
-    autocannon -m 'POST' -H 'content-type=application/json' -b '{ "url": "https://www.google.com/hello-world?query=search#value" }' http://localhost:3000
+    autocannon -m 'POST' -H 'content-type=application/json' -b '{ "url": "https://www.google.com/hello-world?query=search#value" }' http://localhost:3000/href
+    ```
+  - Start the benchmark (trivial string return):
+
+    ```shell
+    autocannon -m 'POST' -H 'content-type=application/json' -b '{ "url": "https://www.google.com/hello-world?query=search#value" }' http://localhost:3000/simple
     ```
 
