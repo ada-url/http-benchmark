@@ -6,6 +6,12 @@ Running benchmarks
 npm start
 ```
 
+- Install autocannon (if needed)
+
+```shell
+npm i autocannon -g
+```
+
 - Run the benchmark
 
 ```shell
