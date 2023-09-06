@@ -22,7 +22,7 @@ npm start
 
   - Start the benchmark:
 
-   ```shell
-   autocannon -m 'POST' -H 'content-type=application/json' -b '{ "url": "https://www.google.com/hello-world?query=search#value" }' http://localhost:3000
-   ```
+    ```shell
+    autocannon -m 'POST' -H 'content-type=application/json' -b '{ "url": "https://www.google.com/hello-world?query=search#value" }' http://localhost:3000
+    ```
 
