@@ -8,7 +8,7 @@ npm i autocannon -g
 
 - Install the dependencies
 ```shell
-npm start
+npm install
 ```
 
 - Run the server
