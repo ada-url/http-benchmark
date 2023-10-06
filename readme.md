@@ -11,6 +11,13 @@ npm install
 npm start
 ```
 
+- Test the server (optional)
+
+If you have curl, you can check that the server returns JSON:
+
+```shell
+ curl -d '{ "url": "https://www.google.com/hello-world?query=search#value" }'  -H 'Content-Type: application/json'  -X POST localhost:3000/href
+```
 
 - Run the benchmark in another shell
 
